@@ -120,7 +120,7 @@ int main(void)
 
     Knight k5;
 
-    k5 = (Knight)1;
+    k5 = (Knight)1; 
 
     HelloKnight((Knight)5);
 

@@ -125,4 +125,4 @@ int main(void)
     HelloKnight((Knight)5);
 
     return 0;
-}
+} 

@@ -102,6 +102,6 @@ int main(void)
 {
     Berserker b;
     b.SetHp(20);
-    
+     
     return 0;
 }

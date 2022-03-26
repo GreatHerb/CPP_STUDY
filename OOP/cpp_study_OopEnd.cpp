@@ -97,6 +97,6 @@ int main()
     cout << Generateid() << endl;
     cout << Generateid() << endl;
     cout << Generateid() << endl;
-
+ 
     return 0;
 }

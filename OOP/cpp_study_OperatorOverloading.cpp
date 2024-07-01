@@ -34,6 +34,23 @@ using namespace std;
 class Position
 {
 public:
+    Position()
+    {
+
+    }
+
+    // explicit : 암시적으로 변환이 되어 넘어오는 것을 명시적으로 바꿔준다
+    // 매 작업마다 명시해줘도 사실 나쁜 습관은 아님
+    explicit Position(int b)
+    {
+        _x = b;
+        _y = b;
+    }
+
+    ~Position()
+    {
+
+    }
 
     Position operator+(const Position& arg)
     {   
@@ -96,6 +113,7 @@ public:
     int _y;
 };
 
+//전역 연산자 함수 version
 Position operator+(int a, const Position& b)
 {
     Position ret;
@@ -129,7 +147,7 @@ int main()
     pos2._y = 1;
 
     Position pos3 = pos + pos2;
-    // pos3 = pos.operator+(pos2);
+    // pos3 = pos.operator+(pos2); 사실 이걸 실행한거랑 똑같다고 보면 된다
     
     Position pos4 = 1 + pos3;
     pos3.operator+(1);
